@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TwitchApp.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CLIENTID" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">0iu584r09hoko4bkwcb39g44gdtpwh</Value>
+    </Setting>
+    <Setting Name="COLOR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0,150,0</Value>
+    </Setting>
+    <Setting Name="SECRET" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">d6jublx8z762ssbkjbio42uw1k6b1p</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

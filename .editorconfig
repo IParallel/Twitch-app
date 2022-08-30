@@ -1,0 +1,7 @@
+﻿[*.cs]
+
+# CS8622: La nulabilidad de los tipos de referencia del tipo de parámetro no coincide con el delegado de destino (posiblemente debido a los atributos de nulabilidad).
+dotnet_diagnostic.CS8622.severity = silent
+
+# CS8602: Desreferencia de una referencia posiblemente NULL.
+dotnet_diagnostic.CS8602.severity = silent

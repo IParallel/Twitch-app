@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Configurations>Debug;Release;BuildFinal</Configurations>
+    <SignAssembly>False</SignAssembly>
+    <ApplicationIcon>TwitchApp.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="TwitchApp.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="InputSimulator" Version="1.0.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="NHttp" Version="0.1.9" />
+    <PackageReference Include="TwitchLib" Version="3.3.0" />
+    <PackageReference Include="WebSocketSharp-NonPreRelease" Version="1.0.0" />
+    <PackageReference Include="Zeroit.Framework.ButtonThematic" Version="1.0.0" />
+    <PackageReference Include="Zeroit.Framework.MaterialWinforms" Version="1.0.0" />
+    <PackageReference Include="Zeroit.Framework.Metro" Version="1.0.0" />
+    <PackageReference Include="Zeroit.Framework.ProgressThematic" Version="1.0.0" />
+    <PackageReference Include="Zeroit.Framework.UIThemes" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
